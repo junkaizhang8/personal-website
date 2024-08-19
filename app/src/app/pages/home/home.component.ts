@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.intervalId = setInterval(this.changeGreetings, 3000);
   }
 
-  changeGreetings = () => {
+  changeGreetings = (): void => {
     // Generate a random index that is not the current index
     const randomNumber = this.getRandomNumber(1, GREETINGS_LIST.length);
     const idx = (this.greetingsListIdx + randomNumber) % GREETINGS_LIST.length;
