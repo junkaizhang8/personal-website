@@ -11,10 +11,30 @@
 
 body {
   background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.page-loading {
+  overflow-y: hidden;
+}
+
+@keyframes page-load {
+  from {
+    opacity: 0;
+    transform: translateY(150px);
+    overflow: hidden;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    overflow: visible;
+  }
 }
 
 .main {
   justify-content: center;
+  animation: page-load 1s ease-in-out;
 }
 
 .center {

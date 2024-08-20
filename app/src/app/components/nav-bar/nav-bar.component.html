@@ -1,1 +1,18 @@
-<p>nav-bar works!</p>
+<div class="nav-bar">
+  <a
+    class="nav-bar-item"
+    [ngClass]="{
+      'nav-bar-item-selected': route === 'home'
+    }"
+    (click)="navigateToHome()"
+    >Home</a
+  >
+  <a
+    class="nav-bar-item"
+    [ngClass]="{
+      'nav-bar-item-selected': route === 'projects'
+    }"
+    (click)="navigateToProjects()"
+    >Projects</a
+  >
+</div>
