@@ -24,15 +24,9 @@ export class NavBarComponent implements OnInit {
     });
   }
 
-  navigateToHome(): void {
-    this.route = 'home';
-    this.router.navigate(['home']);
-    this.loadPage();
-  }
-
-  navigateToPortfolio(): void {
-    this.route = 'portfolio';
-    this.router.navigate(['portfolio']);
+  navigateTo(route: string): void {
+    this.route = route;
+    this.router.navigate([route]);
     this.loadPage();
   }
 
@@ -43,6 +37,7 @@ export class NavBarComponent implements OnInit {
       // Clear the timeout if it exists
       if (this.timeout) {
         clearTimeout(this.timeout);
+        this.timeout = null;
       }
 
       // Scroll to the top of the page

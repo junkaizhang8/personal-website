@@ -27,6 +27,11 @@
   border-radius: 1000px;
   cursor: pointer;
   user-select: none;
+  transition: 0.3s;
+}
+
+.nav-bar-item:hover {
+  transform: scale(1.1);
 }
 
 .nav-bar-item::before {
