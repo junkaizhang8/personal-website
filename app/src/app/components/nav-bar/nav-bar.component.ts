@@ -18,13 +18,19 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
     this.router.events.subscribe((routerData: any): void => {
       if (routerData instanceof ResolveEnd) { 
-        this.route = routerData.url.split('/')[1];
+        const route: string = routerData.url.split('/')[1];
+        if (route !== '') {
+          this.route = route;
+        }
         this.loadPage();
       }
     });
   }
 
   navigateTo(route: string): void {
+    if (route === this.route) {
+      return;
+    }
     this.route = route;
     this.router.navigate([route]);
     this.loadPage();
