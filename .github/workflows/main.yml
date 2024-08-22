@@ -20,6 +20,10 @@ jobs:
       - name: Build Angular app to prod
         working-directory: app
         run: npm i && npm run build:prod
+      
+      - name: Add redirect script to index.html
+        working-directory: app
+        run: sh redirect-setup.sh
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
