@@ -21,9 +21,9 @@ jobs:
         working-directory: app
         run: npm i && npm run build:prod
       
-      - name: Add redirect script to index.html
-        working-directory: app
-        run: sh redirect-setup.sh
+      - name: Set up SPA redirect for GitHub Pages
+        working-directory: app/prod
+        run: ./redirect-setup.sh
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
