@@ -1,0 +1,31 @@
+<div *ngIf="project" class="project" class="project-container">
+  <div class="project-top-container">
+    <a
+      class="project-name"
+      *ngIf="project.link && project.name"
+      href="{{ project.link }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      >{{ project.name }}
+    </a>
+    <div class="project-interval">
+      <span *ngIf="project.start">{{ project.start }}</span>
+      <span *ngIf="project.end"> - {{ project.end }}</span>
+    </div>
+  </div>
+  <p class="project-description">{{ project.description }}</p>
+  <h4 *ngIf="project.languages && project.languages.length > 0">Languages</h4>
+  <ul *ngIf="project.languages" class="project-languages">
+    <li *ngFor="let language of project.languages">
+      {{ language }}
+    </li>
+  </ul>
+  <h4 *ngIf="project.technologies && project.technologies.length > 0">
+    Technologies
+  </h4>
+  <ul *ngIf="project.technologies" class="project-technologies">
+    <li *ngFor="let technology of project.technologies">
+      {{ technology }}
+    </li>
+  </ul>
+</div>

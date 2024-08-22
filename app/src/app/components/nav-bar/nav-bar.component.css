@@ -1,8 +1,14 @@
 .nav-bar {
   display: flex;
-  padding: 1.5rem 6rem;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 4rem;
+  background-color: black;
+  width: 100%;
+  padding: 1rem 6rem;
   gap: 4rem;
-  margin-bottom: 1rem;
+  z-index: 1000;
 }
 
 .nav-bar-item {
@@ -12,9 +18,11 @@
   align-items: center;
   background-color: black;
   font-size: 1.5rem;
+  height: 2rem;
   font-weight: 600;
   text-decoration: none;
   padding: 0.5rem 1rem;
+  margin: auto 0;
   border: none;
   border-radius: 1000px;
   cursor: pointer;

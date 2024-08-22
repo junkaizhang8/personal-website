@@ -30,9 +30,9 @@ export class NavBarComponent implements OnInit {
     this.loadPage();
   }
 
-  navigateToProjects(): void {
-    this.route = 'projects';
-    this.router.navigate(['projects']);
+  navigateToPortfolio(): void {
+    this.route = 'portfolio';
+    this.router.navigate(['portfolio']);
     this.loadPage();
   }
 
@@ -44,6 +44,9 @@ export class NavBarComponent implements OnInit {
       if (this.timeout) {
         clearTimeout(this.timeout);
       }
+
+      // Scroll to the top of the page
+      window.scrollTo(0, 0);
 
       body.classList.add('page-loading');
 

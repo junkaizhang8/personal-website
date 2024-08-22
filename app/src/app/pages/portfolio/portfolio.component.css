@@ -1,0 +1,14 @@
+.github-link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.github-link:hover {
+  color: rgb(0, 220, 255);
+}
+
+.extra-info-text {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
