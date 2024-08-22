@@ -1,0 +1,59 @@
+.nav-bar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 4rem;
+  background-color: black;
+  width: 100%;
+  padding: 1rem 6rem;
+  gap: 4rem;
+  z-index: 1000;
+}
+
+.nav-bar-item {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-size: 1.5rem;
+  height: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: auto 0;
+  border: none;
+  border-radius: 1000px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav-bar-item::before {
+  content: "";
+  position: absolute;
+  height: 107%;
+  width: 103%;
+  border-radius: 1000px;
+  z-index: -1;
+}
+
+.nav-bar-item:hover::before {
+  background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+}
+
+.nav-bar-item:active {
+  z-index: 0;
+}
+
+.nav-bar-item:active::before {
+  background-image: linear-gradient(to bottom right, #00bbff, #ee66ff);
+}
+
+.nav-bar-item-selected {
+  z-index: 0 !important;
+}
+
+.nav-bar-item-selected::before {
+  background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+}

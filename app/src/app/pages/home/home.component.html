@@ -1,0 +1,49 @@
+<div class="main">
+  <div class="home col-10">
+    <div class="home-top">
+      <div class="profile">
+        <img class="profile-pic" src="profile.jpeg" alt="Profile Picture" />
+        <h3 class="profile-name">Jun Kai Zhang</h3>
+      </div>
+      <div class="row center">
+        <div class="greeting-container">
+          <h2 *ngIf="swapGreeting" @slideOut class="profile-greeting">
+            {{ oldGreeting }}
+          </h2>
+          <h2 *ngIf="!swapGreeting" @slideIn class="profile-greeting">
+            {{ greeting }}
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="home-body">
+      <p>
+        I am a third-year Computer Science student at the University of Toronto.
+        I am strongly interested in software engineering, full-stack web
+        development, and game development. Additionally, I am passionate about
+        learning new technologies in an ever-evolving field.
+      </p>
+      <h3>Socials</h3>
+      <div class="socials-container">
+        <a
+          href="mailto:jkai.zhang@mail.utoronto.ca"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img class="socials-img" src="email.png" alt="Email"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/jun-kai-zhang/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img class="socials-img" src="linkedin.png" alt="LinkedIn"
+        /></a>
+        <a
+          href="https://github.com/junkaizhang8/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img class="socials-img" src="github.png" alt="GitHub"
+        /></a>
+      </div>
+    </div>
+  </div>
+</div>

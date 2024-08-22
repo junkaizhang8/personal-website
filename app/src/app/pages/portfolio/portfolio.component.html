@@ -1,0 +1,20 @@
+<div class="main">
+  <div class="portfolio column col-10">
+    <h3>Projects</h3>
+    <a
+      class="github-link"
+      href="https://github.com/junkaizhang8"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      GitHub
+    </a>
+    <p class="extra-info-text">
+      View the project's repository by selecting its name.
+    </p>
+    <app-project
+      *ngFor="let project of projects"
+      [project]="project"
+    ></app-project>
+  </div>
+</div>
