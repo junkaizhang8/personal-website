@@ -40,7 +40,6 @@
 .profile-greeting {
   grid-row-start: 1;
   grid-column-start: 1;
-  min-height: 150px;
   height: fit-content;
   font-size: 6rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -67,6 +66,14 @@
   gap: 2rem;
 }
 
+.socials-container a {
+  transition: 0.3s;
+}
+
+.socials-container a:hover {
+  transform: scale(1.2);
+}
+
 .socials-img {
   width: 3rem;
   height: 3rem;
@@ -75,5 +82,15 @@
 @media (max-width: 1200px) {
   .home-top {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-name {
+    font-size: 2.5rem;
+  }
+
+  .profile-greeting {
+    font-size: 4rem;
   }
 }
