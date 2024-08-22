@@ -3,14 +3,14 @@
   column-gap: 20px;
 }
 
-.github-link, .resume-link {
+.links-row a {
   font-size: 1.5rem;
   font-weight: 500;
   width: fit-content;
   transition: 0.3s;
 }
 
-.github-link:hover, .resume-link:hover {
+.links-row a:hover {
   color: rgb(0, 220, 255);
 }
 
