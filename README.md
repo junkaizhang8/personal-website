@@ -1,14 +1,14 @@
-# Personal Website
+# Portfolio
 ## Prerequisites
 Have Node.js installed: https://nodejs.org/en/download/
 ## Setting Up
 1. Open up terminal and clone the repository
 ```sh
-git clone https://github.com/junkaizhang8/personal-website.git
+git clone https://github.com/junkaizhang8/portfolio.git
 ```
 2. Navigate to the *app* directory
 ```sh
-cd personal-website
+cd portfolio
 cd app
 ```
 3. Install Node packages
