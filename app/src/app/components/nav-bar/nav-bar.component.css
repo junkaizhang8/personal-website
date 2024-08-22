@@ -27,11 +27,6 @@
   border-radius: 1000px;
   cursor: pointer;
   user-select: none;
-  transition: 0.3s;
-}
-
-.nav-bar-item:hover {
-  transform: scale(1.1);
 }
 
 .nav-bar-item::before {
@@ -61,4 +56,15 @@
 
 .nav-bar-item-selected::before {
   background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    padding: 1rem 2rem;
+    gap: 2rem;
+  }
+  .nav-bar-item {
+    font-size: 1rem;
+    height: 1.5rem;
+  }
 }

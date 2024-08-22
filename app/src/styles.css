@@ -44,7 +44,7 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   margin: 6rem auto 0 auto;
-  padding-top: 0.5rem;
+  padding: 0.5rem 0 1.5rem 0;
   animation: page-load 1s ease-in-out;
 }
 
